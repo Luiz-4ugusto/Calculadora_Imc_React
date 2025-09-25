@@ -1,6 +1,6 @@
 import "./App.css";
 import ImcCalc from "./components/ImcCalc";
-import ImcTable from "./components/ImcTable";
+import Imctable from "./components/Imctable";
 
 import { useState } from "react";
 import { data } from "./data/data";
@@ -43,7 +43,7 @@ function App() {
       {!imc ? (
         <ImcCalc calcImc={calcImc} />
       ) : (
-        <ImcTable
+        <Imctable
           data={data}
           imc={imc}
           info={info}
